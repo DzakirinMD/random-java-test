@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class NaturalNumber {
+/**
+ * Natural Number - Write a Java program to list out the first 1500 natural numbers whose factor(s) is/are either ONLY 2, 3, or 5.
+ * The faster your program can complete the calculation the better, but it should not run more than 2 minute.
+ */
+public class Question3 {
 
     public static void main(String[] args) {
 
@@ -43,6 +47,6 @@ public class NaturalNumber {
         long seconds = (TimeUnit.MILLISECONDS.toSeconds(timeElapsed) % 60);
 
         System.out.println("This program took => " + minutes + " minutes and "  +  seconds + " seconds to complete !");
-        // tested on M1 took avg of 26s
+        // tested on Macbook M1 took avg of 26s
     }
 }
