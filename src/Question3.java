@@ -13,25 +13,34 @@ public class Question3 {
         int index = 1;
 
         for (int i = 2; index <= 1500; i++) {
-            ArrayList<Integer> remainder = new ArrayList<>();
+
+            ArrayList<Integer> factors = new ArrayList<>();
+//            int[] factors = new int[10];
             int number = i;
             while (number % 2 == 0 || number % 3 == 0 || number % 5 == 0) {
                 if (number % 2 == 0) {
                     number = number / 2;
-                    remainder.add(2);
+                    factors.add(2);
+//                    factors[0] = 2;
                 } else if (number % 3 == 0) {
                     number = number / 3;
-                    remainder.add(3);
+                    factors.add(3);
+//                    factors[1] = 3;
                 } else if (number % 5 == 0) {
                     number = number / 5;
-                    remainder.add(5);
+//                    factors[2] = 5;
+                    factors.add(5);
                 }
             }
 
             if (number != 1) {
-                remainder.add(10);
+                /*
+                    Adding this condition to not print out number that don't have 2,3,5 as factors
+                 */
             } else {
-                System.out.println("No. " + index + " -> " + i + ":" + remainder);
+//                factors = Arrays.stream(factors).filter(element -> element != 0).toArray();
+//                System.out.println("No. " + index + " -> " + i + ":" + Arrays.toString(factors));
+                System.out.println("No. " + index + " -> " + i + ":" + factors);
                 index++;
             }
         }
@@ -47,6 +56,6 @@ public class Question3 {
         long seconds = (TimeUnit.MILLISECONDS.toSeconds(timeElapsed) % 60);
 
         System.out.println("This program took => " + minutes + " minutes and "  +  seconds + " seconds to complete !");
-        // tested on Macbook M1 took avg of 26s
+        // tested on Macbook M1 took avg of 22s to complete
     }
 }
