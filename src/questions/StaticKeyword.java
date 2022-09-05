@@ -40,8 +40,8 @@ public class StaticKeyword {
         myObj.myPublicMethod(); // Call the public method
 
 
-        Student s1 = new Student(111,"Karan");
-        Student s2 = new Student(222,"Aryan");
+        Student s1 = new Student(111,"Zaki");
+        Student s2 = new Student(222,"Armen");
         //we can change the college of all objects by the single line of code
         Student.college="ACM";
         s1.display();
