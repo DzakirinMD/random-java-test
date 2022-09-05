@@ -5,13 +5,15 @@ import java.util.Collections;
 import java.util.HashMap;
 
 /**
- * A Java Collection is a predefined architecture capable of storing a group of elements
- * and behaving like a single unit such as an object or a group.
+ * A Java Collections are like containers that group multiple items in a single unit.
+ * For example, a jar of chocolates, a list of names, etc.
  * It is a Collections FrameWork - provides various interfaces(methods).
  * These interfaces include several methods to perform different operations on collections.
  * The Collection framework provides various data structures and algorithms that can be used directly.
  * The Collection interface (java.util.Collection) and Map interface (java.util.Map) are the two main “root” interfaces of Java collection classes.
  * All collection methods can be check here: <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collections Framework</a>
+ *
+ * A HashSet is a collection of items where every item is unique
  */
 
 public class JavaCollectionsFramework {
@@ -35,7 +37,7 @@ public class JavaCollectionsFramework {
         hashMap.put(3, "Singapore");
 
         // Finding the value for a key
-        System.out.println("Value for 1 is " + hashMap.get(1));
+        System.out.println("Value for 1 in hashmap is : " + hashMap.get(1));
 
         // Traversing through the HashMap using java 8 lambda
         hashMap.forEach((key, value) -> System.out.println("Key => " + key + " Value => " + value));
