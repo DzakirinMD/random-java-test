@@ -1,4 +1,6 @@
-package com.ytldigital;
+package com.zack.repository;
+
+import com.zack.model.Auditorium;
 
 import java.util.HashMap;
 import java.util.HashSet;
