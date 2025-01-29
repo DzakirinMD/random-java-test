@@ -12,6 +12,7 @@
     <modules>
         <!-- Add all child modules here -->
         <module>module/auditorium-booking</module>
+        <module>module/basic-java</module>
     </modules>
 
     <properties>

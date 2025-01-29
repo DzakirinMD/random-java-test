@@ -1,4 +1,4 @@
-package questions.oopconcept;
+package base.oopconcept;
 
 class Animal {
     public void animalSound() {
