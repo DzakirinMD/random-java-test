@@ -1,18 +1,6 @@
-package questions;
+package base;
 
-class Student{
-    int rollno;//instance variable
-    String name;
-    static String college ="ITS"; //static variable
-
-    //constructor
-    Student(int r, String n){
-        rollno = r;
-        name = n;
-    }
-    //method to display the values
-    void display (){System.out.println(rollno+" "+name+" "+college);}
-}
+import base.model.Student;
 
 /**
  *  The static keyword in Java is used for memory management mainly.

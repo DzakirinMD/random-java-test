@@ -1,4 +1,4 @@
-package questions;
+package base;
 
 /**
  * <a href="https://medium.com/swlh/clean-architecture-java-spring-fea51e26e00">Clean Architecture with Coding</a>

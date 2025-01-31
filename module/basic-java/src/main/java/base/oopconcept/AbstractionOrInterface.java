@@ -1,4 +1,4 @@
-package questions.oopconcept;
+package base.oopconcept;
 
 /**
  * An interface in Java is a blueprint of a class. It has static constants and abstract methods.
@@ -34,7 +34,7 @@ class GuavaPhone implements SampleInterface {
     }
 }
 
-public class InterfaceExample {
+public class AbstractionOrInterface {
     public static void main(String[] args) {
 
         AndroidPhone androidPhone = new AndroidPhone();
